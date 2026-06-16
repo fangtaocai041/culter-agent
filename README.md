@@ -36,6 +36,7 @@ P₃ 是从三角核心衍生的第三个项目。它依赖 S/V0 的物种知识
     C   conflict-arbiter → 冲突仲裁
 ```
 ```
+
 ---
 ```
 ## 🧩 这个项目是什么
@@ -48,6 +49,7 @@ P₃ 是从三角核心衍生的第三个项目。它依赖 S/V0 的物种知识
 >
 > 我们说：但五条鲌鱼可以——只要每条鱼都有自己的生态位。
 ```
+
 ---
 ```
 ## ⚡ 快速上手
@@ -60,6 +62,7 @@ python src/main.py --help
 python -c "from src.adapter import CulterAdapter; a = CulterAdapter(); print(a.health())"
 ```
 ```
+
 ---
 ```
 ## 🚀 核心能力
@@ -79,6 +82,7 @@ python -c "from src.adapter import CulterAdapter; a = CulterAdapter(); print(a.h
 | [culter-agent](../culter-agent/) | P₃ | 🐟 鲌类专研 |
 | [conflict-arbiter](../conflict-arbiter/) | C | 🔥 冲突仲裁 |
 ```
+
 ---
 ---
 
@@ -101,6 +105,7 @@ python -c "from src.adapter import CulterAdapter; a = CulterAdapter(); print(a.h
   🐟 culter-agent      → 鲌类专研 (P₃)
   🔥 conflict-arbiter  → 冲突仲裁 (C)
 ```
+
 > 🌊 万物皆变 · Panta Rhei
 >
 > 🏛️ 赫拉克利特说：人不能两次踏进同一条河流。
