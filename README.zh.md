@@ -76,14 +76,24 @@ python culter-agent/src/main.py --query "翘嘴鲌 年龄与生长"
 
 ```
 culter-agent/
-├── config/agent.yaml              # Agent 配置 (v2.0.0)
-├── data/knowledge_base/           # 物种知识库
+├── config/agent.yaml              ← Agent 配置 (v2.0.0)
+├── config/component_registry.yaml ← 组件注册
+├── data/knowledge_base/           ← 物种知识库
 ├── src/
-│   ├── adapter.py                 # IProjectAdapter → CulterAdapter
-│   ├── agent/orchestrator.py      # 9 阶段管线编排器
-│   ├── skills/                    # 8 个技能模块
-│   ├── prompts/                   # 系统提示词
-│   └── main.py                    # CLI 入口
+│   ├── adapter.py                 ← IProjectAdapter → CulterAdapter
+│   ├── agent/orchestrator.py      ← 9 阶段管线编排器
+│   ├── knowledge_base.py          ← 知识库查询
+│   ├── prompts/system_prompts.py  ← 系统提示词
+│   ├── skills/                    ← 8 个技能模块
+│   │   ├── search-literature/     ← 文献搜索
+│   │   ├── analyze-growth/        ← 年龄鉴定与生长建模
+│   │   ├── analyze-genomics/      ← 基因组学
+│   │   ├── analyze-genetics/      ← 群体遗传学
+│   │   ├── analyze-trophic/       ← 稳定同位素
+│   │   ├── model-coexistence/     ← 同域共存建模
+│   │   ├── assess-resource/       ← 资源评估
+│   │   └── model-habitat/         ← 栖息地建模
+│   └── main.py                    ← CLI 入口
 └── README.md
 ```
 
