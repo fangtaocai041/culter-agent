@@ -1,4 +1,4 @@
-﻿# Culter Agent 🐟
+# Culter Agent 🐟
 
 **P₃ 万物衍生** — 鲌类专研 · 基因组 · 年龄生长 · 同域共存。
 
@@ -67,26 +67,8 @@ python -c "from src.adapter import CulterAdapter; a = CulterAdapter(); print(a.h
 ```
 ## 🚀 核心能力
 ```
-| 🚀 能力 | 📝 说明 |
-|:-----|:------|
-| **几何形态测量** | landmark 分析 + Procrustes 叠印 |
-| **稳定同位素** | δ¹³C, δ¹⁵N → 营养生态位 |
-| **肠道内含物** | 食性组成 + 重叠指数 |
-| **基因组** | RAD-seq / SNP 标记 |
-| **同域共存** | 生态位分化 + 时空资源分割 |---------|:--------:|:--------|
-| [fish-ecology-assistant](../fish-ecology-assistant/) | V0 | 📦 知识供给 |
-| [cognitive-search-engine](../cognitive-search-engine/) | V1 | 🔍 搜索验证 |
-| [eon-core](../eon-core/) | Coord | ⚙️ 协调内核 |
-| [porpoise-agent](../porpoise-agent/) | P₁ | 🐬 江豚专研 |
-| [coilia-agent](../coilia-agent/) | P₂ | 🐟 刀鲚专研 |
-| [culter-agent](../culter-agent/) | P₃ | 🐟 鲌类专研 |
-| [conflict-arbiter](../conflict-arbiter/) | C | 🔥 冲突仲裁 |
-```
 
----
----
 
-```
 ## 🔗 生态体系
 ```
 > 🔥 和则无穷力量，分则顶尖专家引擎。

@@ -1,4 +1,4 @@
-﻿# Culter Agent 🐟
+# Culter Agent 🐟
 
 **P₃ 万物衍生** — 鲌类专研 · 基因组 · 年龄生长 · 同域共存。
 
