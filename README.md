@@ -91,4 +91,14 @@ Derived Projects (open N):
 > 🔥 Together infinite power, apart top expert engines.
 
 ---
-*淡水渔业研究中心 刘凯研究员课题组 · SanShengWanWu Ecosystem · MIT License*
+
+🌱 **Everything Flows · Panta Rhei**
+
+> Heraclitus said: No man ever steps in the same river twice.
+>
+> We say: You cannot analyze today''s ecological data with last month''s code.
+
+This project is not a fixed toolset — it is a **living system**. Every component has built-in expiration mechanisms, version tracking, and emergence awareness. As your research deepens, packages update, and new methods emerge, it evolves with you.
+
+*Last updated: 2026-06-17　|　Environment: Reasonix Code · DeepSeek Powered*
+
