@@ -2,114 +2,116 @@
   🇬🇧 <a href="README.md">English</a>
 </p>
 
-# 🐟 Culter Agent ?鲌类专研 (P?
+# 🐟 Culter Agent · 鲌类专研 (P₃)
 
-> **物种**: 鲌属 ?翘嘴鲌、蒙古鲌、尖头鲌、达氏鲌、似尖头鲌、弯头鲌
-> **领域**: 鲌类基因组学 · 营养生态学 · 生长分析
-> **角色**: P??三生万物 S-T-V-P?P?六体架构
+> **物种**：*Culter* 属 — *C. alburnus*（翘嘴鲌）、*C. mongolicus*（蒙古鲌）、*C. oxycephalus*、*C. dabryi*、*C. oxycephaloides*、*C. recurviceps*
+> **领域**：鲌类基因组学 · 营养生态位 · 年龄生长 · 同域共存
+> **角色**：P₃ — S-T-V-P₁-P₂-P₃-C 六体架构衍生项目
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-v1.0.1-8b5cf6)]()
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB)]()
-[![Domain](https://img.shields.io/badge/领域-鲌类基因组学-9cf)]()
-[![Triangle](https://img.shields.io/badge/三角赋能-EC4899)]()
-[![DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/fangtaocai041/culter-agent)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10+-3776AB)]()
+[![Domain](https://img.shields.io/badge/Domain-Culter_Genomics-9cf)]()
+[![Triangle](https://img.shields.io/badge/Triangle-Powered-EC4899)]()
 
----
+## 🧠 核心哲学
 
-## 🔺 S-T-V-P?P?架构角色: **P?(鲌类专研)**
+> 🌍 世界是动态的，📖 知识是暂时的，🌟 涌现是常态。
 
-> 三生万物六体架构: `fish(S) ?cognitive(V) ?eon-core(Coord)`，衍? `porpoise(P?` + `coilia(P?` + `culter(P?` + `conflict-arbiter(C)`.
-> **P?* 是鲌类领域专???S 继承知识、从 V 继承验证、从 Coord 继承协调?
+### 📜 三大信条
+
+**🌍 世界是动态的** — 鲌类的同域共存格局随水体富营养化而改变。营养生态位随饵料资源波动。稳定同位素 δ¹³C 和 δ¹⁵N 信号捕捉的是特定时段的食物网结构。
+
+**📖 知识是暂时的** — 基因组组装版本在更新，参考序列在进化。von Bertalanffy 生长参数需要定期用新样本重新拟合。
+
+**🌟 涌现是常态** — 当稳定同位素、胃含物分析和基因组选择信号三个独立来源指向同一生态位分化模式时，系统识别为跨维度涌现。
+
+## 🧩 项目定位
+
+**Culter Agent** 是三生万物生态体系中 P₃ 衍生项目。作为鲌类领域的专属智能体，专精于基因组学分析、稳定同位素营养生态位建模、年龄生长参数估计，以及同域共存机制研究。
+
+覆盖 6 种鲌属鱼类。
+
+## 🔺 S-T-V 三角架构角色
+
+| 项目 | 层级 | 角色 |
+|------|:----:|------|
+| fish-ecology-assistant | 三角 S/V0 | 知识供给 |
+| cognitive-search-engine | 三角 V/V1 | 搜索验证 |
+| eon-core | Coord | 协调中枢 |
+| porpoise-agent | 衍生 P₁ | 江豚专研 |
+| coilia-agent | 衍生 P₂ | 刀鲚专研 |
+| **culter-agent** | **衍生 P₃** | **鲌类专研** |
+| conflict-arbiter | 衍生 C | 冲突仲裁 |
+
 ## 📊 自我评价
 
 | 维度 | 评分 | 说明 |
-|------|:--:|------|
-| 🐟 领域深度 | ⭐⭐⭐⭐?| 6 种鲌属，基因组学/营养生态学档案 |
-| 🔬 分析脚本 | ⭐⭐⭐⭐?| 2 个核心脚? growth_analysis + trophic_analysis |
-| 📡 三角集成 | ⭐⭐⭐⭐?| 通过三角桥接直接读取鱼类生态知识库 |
-| 🧠 认知架构 | ⭐⭐⭐⭐?| ReAct 循环 + CulterOrchestrator v2.10 |
-| 🧪 测试覆盖 | ⭐⭐⭐☆?| 脚本级测试，持续扩展?|
+|------|:----:|------|
+| 🐟 领域深度 | ⭐⭐⭐⭐⭐ | 6 种鲌类基因组/营养生态位数据 |
+| 🔬 分析脚本 | ⭐⭐⭐⭐⭐ | 2 核心脚本：growth_analysis + trophic_analysis |
+| 🌐 多维度 | ⭐⭐⭐⭐ | 基因组 + 稳定同位素 + 年龄生长 + 同域共存 |
+| 📚 数据 | ⭐⭐⭐⭐ | 形态测量 + 同位素 + 基因组序列 |
 
----
+## 🚀 快速开始
 
-## 📋 版本历史
-
-| 版本 | 日期 | 变更 |
-|------|------|------|
-| **v1.0.1** | 2026-06-20 | README 复原 ?从历史会话恢复完整文?|
-| **v1.0.0** | 2026-06-17 | 初始发布 ?2 分析脚本, 6 物种, ReAct 编排?|
-
----
-
-## 🧩 这个项目是什?
-**Culter Agent** 是专注于鲌属鱼类的专?AI 研究智能体——主要研究对象翘嘴鲌?Culter alburnus*），东亚湖泊和水库中重要的经济鱼类。构建于三角核心之上?
-- **物种档案**: 6 种鲌属鱼?- **2 个核心脚?*: 生长参数分析 (von Bertalanffy) 和营养生态位分析 (稳定同位?胃含?
-- **ReAct 认知循环**: CulterOrchestrator v2.10 迭代分析
-- **9 阶段管线**: agent.yaml v2.1.0 配置
-- **三角赋能**: 直接读取?生态助手知识库
-
----
-
-## 🚀 快速开?
 ```bash
 git clone https://github.com/fangtaocai041/culter-agent.git
 cd culter-agent
 pip install -e .
-python -m culter_agent run "营养生态位"
-python scripts/growth_analysis.py --species "Culter alburnus"
 ```
 
----
+## 🏗️ 内部架构
 
-## 🔗 生态体?
-```
-三角核心 (sealed 3):
-  📦 fish-ecology-assistant    ?知识供给 (V0)
-  🔍 cognitive-search-engine   ?搜索验证 (V1)
-  ⚙ eon-core                  ?协调内核 (Coord)
+| 模块 | 功能 |
+|------|------|
+| `genomics/` | 鲌类基因组组装与注释 |
+| `trophic/` | δ¹³C/δ¹⁵N 稳定同位素营养生态位 |
+| `growth/` | von Bertalanffy 年龄生长参数 |
+| `coexistence/` | 同域共存机制与生态位分化 |
+| `scripts/` | 可执行分析管线 |
 
-万物衍生 (open N):
-  🐬 porpoise-agent    ?P?江豚专研
-  🐟 coilia-agent      ?P?刀鲚专?  🐟 culter-agent      ?P?鲌类专研 ?本项?  🔥 conflict-arbiter  ?C  冲突仲裁
-```
+## ✨ 核心特性
 
-> 🔥 和则无穷力量，分则顶尖专家引擎?
----
+| 特性 | 状态 | 说明 |
+|------|:----:|------|
+| 🧬 基因组 | ✅ | 6 种鲌类比较基因组学 |
+| 🔬 同位素 | ✅ | δ¹³C/δ¹⁵N 营养生态位贝叶斯混合模型 |
+| 📏 年龄生长 | ✅ | von Bertalanffy 参数最大似然估计 |
+| 🌊 同域共存 | ✅ | 生态位重叠与分化定量分析 |
+| 📊 资源评估 | ✅ | 基于长度的资源评估模型 |
 
-## ?功能特?
-| 功能 | 状?| 说明 |
-|------|:--:|------|
-| 🔬 领域分析 | ?| 鲌属专属研究管线 |
-| 📡 三角赋能 | ?| V0知识 + V1搜索 + Coord编排 |
-| 🧠 认知循环 | ?| ReAct 模式迭代分析 |
-| 📈 生长分析 | ?| von Bertalanffy 生长参数 + 体重-体长关系 |
-| 🍽?营养分析 | ?| 稳定同位?(δ¹³C, δ¹⁵N) + 胃含物分?|
-| 🎛?编排?v2.10 | ?| CulterOrchestrator 调用真实 Python 脚本 |
-| ⚙ 9 阶段管线 | ?| agent.yaml v2.1.0 + 6 种目标物?|
+## 📊 分析脚本
 
----
+| 脚本 | 功能 |
+|------|------|
+| `growth_analysis.py` | 年龄生长参数估计（VBGF） |
+| `trophic_analysis.py` | 稳定同位素营养生态位分析 |
+
+## 🔗 生态体系
+
+Culter Agent 作为三生万物 P₃ 节点，从 fish-ecology-assistant（S/V0）获取鲌类基础生态数据，通过 cognitive-search-engine（V/V1）获取最新鲌类基因组学文献，由 eon-core（Coord）统一调度协调。
 
 ## 📋 README 变更记录
 
-| 版本 | 日期 | 主题 | 变更内容 |
-|:------|:-----|:------|:-------------|
-| **v8.0** | 2026-06-20 | README 复原 | ?stub 扩展: 完整哲学、架构、功能表、分析脚本、自我评价、变更记录、DeepWiki 徽标 |
-| **v1.0.0** | 2026-06-17 | 初始 | Stub README ?基本项目描述 |
+| 版本 | 日期 | 主题 |
+|------|------|------|
+| **v1.0.1** | 2026-07-11 | 六物种 + P₃ 整合 |
+| **v1.0.0** | 2026-07-11 | 初始发布 · 鲌类基因组学 |
 
 ---
 
-## 📜 许可?
-MIT © 2026 fangtaocai041
+> **"不要搜索字符串，要重建所指。"**
+> Don't search for strings — reconstruct the signified.
 
 ---
 
----
+## 🌱 万物皆变 · Panta Rhei
 
-🌱 **万物皆变 · Panta Rhei**
+> 赫拉克利特说：人不能两次踏进同一条河流。
+>
+> 我们说：知识会老去，但人类对世界的追问永不落幕。昨日之真理为今日之基石，今日之未知为明日之征途。我们的目光，从不囿于已知的疆界；我们的脚步，终将踏上那片星光璀璨的浩瀚征途。
 
-> > 我们说：知识会老去，但人类对世界的追问永不落幕。昨日之真理为今日之基石，今日之未知为明日之征途。我们的目光，从不囿于已知的疆界；我们的脚步，终将踏上那片星光璀璨的浩瀚征途。
+这个项目不是一套固定的工具集——它是一个**活的系统**。
 
-这个项目不是一套固定的工具集——它是一个**活的系统**。每个组件都内置了过期机制、版本追踪和涌现感知。随着你的研究深入、R包更新、新方法涌现，它会和你一起进化。
-
-*最后更新: 2026-06-17 | 适用环境: Reasonix Code · DeepSeek 驱动*
+*最后更新: 2026-07-11 | Reasonix Code · DeepSeek 驱动*
