@@ -19,19 +19,19 @@
 
 ## 🔺 S-T-V-P?P?Architecture Role: **P?(Culter Domain)**
 
-> S-T-V-P?P?six-body architecture: `fish(S) ?cognitive(V) ?eon-core(Coord)`, derived: `porpoise(P?` + `coilia(P?` + `culter(P?` + `conflict-arbiter(C)`.
-> **P?* is the Culter domain expert ?inherits knowledge from S, verification from V, coordination from Coord.
+> S-T-V-P?P?six-body architecture: `fish(S) ?cognitive(V) → eon-core(Coord)`, derived: `porpoise(P₁` + `coilia(P₂` + `culter(P₃` + `conflict-arbiter(C)`.
+> **P₁** is the Culter domain expert ?inherits knowledge from S, verification from V, coordination from Coord.
 
 ## 📊 Self-Assessment
 
 | Dimension | Rating | Notes |
 |-----------|:-----:|-------|
-| 🐟 Domain Depth | ⭐⭐⭐⭐?| 6 *Culter* species with genomics/trophic profiles |
-| 🔬 Analysis Scripts | ⭐⭐⭐⭐?| 2 core scripts: growth_analysis + trophic_analysis |
-| 📡 Triangle Integration | ⭐⭐⭐⭐?| Direct fish-ecology KB read via triangle bridge |
-| 🧠 Cognitive Architecture | ⭐⭐⭐⭐?| ReAct loop + CulterOrchestrator v2.10 |
+| 🐟 Domain Depth | ⭐⭐⭐⭐⭐| 6 *Culter* species with genomics/trophic profiles |
+| 🔬 Analysis Scripts | ⭐⭐⭐⭐⭐| 2 core scripts: growth_analysis + trophic_analysis |
+| 📡 Triangle Integration | ⭐⭐⭐⭐⭐| Direct fish-ecology KB read via triangle bridge |
+| 🧠 Cognitive Architecture | ⭐⭐⭐⭐⭐| ReAct loop + CulterOrchestrator v2.10 |
 | 🧪 Test Coverage | ⭐⭐⭐☆?| Script-level tests, expanding |
-| 🚀 Extensibility | ⭐⭐⭐⭐?| Add new *Culter* species = new section in config |
+| 🚀 Extensibility | ⭐⭐⭐⭐⭐| Add new *Culter* species = new section in config |
 
 ---
 
