@@ -59,6 +59,10 @@ python -m culter_agent run "trophic ecology"
 | 🔬 Domain Analysis | Species-specific research pipeline |
 | 📡 Triangle Powered | V0 knowledge + V1 search + Coord orchestration |
 | 🧠 Cognitive Loop | ReAct pattern for iterative analysis |
+| 📈 growth_analysis.py | 生长参数分析脚本 (von Bertalanffy / 体重-体长) |
+| 🍽️ trophic_analysis.py | 营养生态位分析脚本 (稳定同位素 / 胃含物) |
+| 🎛️ Orchestrator v2.10 | CulterOrchestrator 调用真实 Python 脚本 (非 stub) |
+| ⚙️ agent.yaml v2.1.0 | 9 阶段管线配置 + 6 目标物种 |
 
 ---
 
