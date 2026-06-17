@@ -1,6 +1,6 @@
-# 🐟 鲌类智能体
+﻿# 🐟 鲌类智能体
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python) ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square) ![Version](https://img.shields.io/badge/Version-v1.0.0-blueviolet?style=flat-square) ![Pipeline](https://img.shields.io/badge/Pipeline-9-phase-orange?style=flat-square) ![Domain](https://img.shields.io/badge/Domain-Culter%20Genomics-9cf?style=flat-square) ![Triangle](https://img.shields.io/badge/Triangle-Powered-yellow?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python) ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge) ![Version](https://img.shields.io/badge/Version-v1.0.0-blueviolet?style=for-the-badge) ![Pipeline](https://img.shields.io/badge/Pipeline-9-phase-orange?style=for-the-badge) ![Domain](https://img.shields.io/badge/Domain-Culter%20Genomics-9cf?style=for-the-badge) ![Triangle](https://img.shields.io/badge/Triangle-Powered-yellow?style=for-the-badge)
 
 > 长江鱼类领域专研智能体。
 > 和则无穷力量，分则顶尖专家引擎。
