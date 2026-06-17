@@ -1,12 +1,12 @@
-<p align="center">
+﻿<p align="center">
   🇬🇧 <a href="README.md">English</a>
 </p>
 
-# 🐟 Culter Agent — 鲌类专研 (P₃)
+# 🐟 Culter Agent �?鲌类专研 (P�?
 
-> **物种**: 鲌属 — 翘嘴鲌、蒙古鲌、尖头鲌、达氏鲌、似尖头鲌、弯头鲌
+> **物种**: 鲌属 �?翘嘴鲌、蒙古鲌、尖头鲌、达氏鲌、似尖头鲌、弯头鲌
 > **领域**: 鲌类基因组学 · 营养生态学 · 生长分析
-> **角色**: P₃ — 三生万物 S-T-V-P₁-P₂ 六体架构
+> **角色**: P�?�?三生万物 S-T-V-P�?P�?六体架构
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-v1.0.1-8b5cf6)]()
@@ -17,20 +17,19 @@
 
 ---
 
-## 🔺 S-T-V-P₁-P₂ 架构角色: **P₃ (鲌类专研)**
+## 🔺 S-T-V-P�?P�?架构角色: **P�?(鲌类专研)**
 
-> 三生万物六体架构: `fish(S) → cognitive(V) → eon-core(Coord)`，衍生: `porpoise(P₁)` + `coilia(P₂)` + `culter(P₃)` + `conflict-arbiter(C)`.
-> **P₃** 是鲌类领域专家 — 从 S 继承知识、从 V 继承验证、从 Coord 继承协调。
-
+> 三生万物六体架构: `fish(S) �?cognitive(V) �?eon-core(Coord)`，衍�? `porpoise(P�?` + `coilia(P�?` + `culter(P�?` + `conflict-arbiter(C)`.
+> **P�?* 是鲌类领域专�?�?�?S 继承知识、从 V 继承验证、从 Coord 继承协调�?
 ## 📊 自我评价
 
 | 维度 | 评分 | 说明 |
 |------|:--:|------|
-| 🐟 领域深度 | ⭐⭐⭐⭐☆ | 6 种鲌属，基因组学/营养生态学档案 |
-| 🔬 分析脚本 | ⭐⭐⭐⭐☆ | 2 个核心脚本: growth_analysis + trophic_analysis |
-| 📡 三角集成 | ⭐⭐⭐⭐⭐ | 通过三角桥接直接读取鱼类生态知识库 |
-| 🧠 认知架构 | ⭐⭐⭐⭐☆ | ReAct 循环 + CulterOrchestrator v2.10 |
-| 🧪 测试覆盖 | ⭐⭐⭐☆☆ | 脚本级测试，持续扩展中 |
+| 🐟 领域深度 | ⭐⭐⭐⭐�?| 6 种鲌属，基因组学/营养生态学档案 |
+| 🔬 分析脚本 | ⭐⭐⭐⭐�?| 2 个核心脚�? growth_analysis + trophic_analysis |
+| 📡 三角集成 | ⭐⭐⭐⭐�?| 通过三角桥接直接读取鱼类生态知识库 |
+| 🧠 认知架构 | ⭐⭐⭐⭐�?| ReAct 循环 + CulterOrchestrator v2.10 |
+| 🧪 测试覆盖 | ⭐⭐⭐☆�?| 脚本级测试，持续扩展�?|
 
 ---
 
@@ -38,25 +37,21 @@
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
-| **v1.0.1** | 2026-06-20 | README 复原 — 从历史会话恢复完整文档 |
-| **v1.0.0** | 2026-06-17 | 初始发布 — 2 分析脚本, 6 物种, ReAct 编排器 |
+| **v1.0.1** | 2026-06-20 | README 复原 �?从历史会话恢复完整文�?|
+| **v1.0.0** | 2026-06-17 | 初始发布 �?2 分析脚本, 6 物种, ReAct 编排�?|
 
 ---
 
-## 🧩 这个项目是什么
-
-**Culter Agent** 是专注于鲌属鱼类的专业 AI 研究智能体——主要研究对象翘嘴鲌（*Culter alburnus*），东亚湖泊和水库中重要的经济鱼类。构建于三角核心之上：
-
-- **物种档案**: 6 种鲌属鱼类
-- **2 个核心脚本**: 生长参数分析 (von Bertalanffy) 和营养生态位分析 (稳定同位素/胃含物)
+## 🧩 这个项目是什�?
+**Culter Agent** 是专注于鲌属鱼类的专�?AI 研究智能体——主要研究对象翘嘴鲌�?Culter alburnus*），东亚湖泊和水库中重要的经济鱼类。构建于三角核心之上�?
+- **物种档案**: 6 种鲌属鱼�?- **2 个核心脚�?*: 生长参数分析 (von Bertalanffy) 和营养生态位分析 (稳定同位�?胃含�?
 - **ReAct 认知循环**: CulterOrchestrator v2.10 迭代分析
 - **9 阶段管线**: agent.yaml v2.1.0 配置
-- **三角赋能**: 直接读取鱼-生态助手知识库
+- **三角赋能**: 直接读取�?生态助手知识库
 
 ---
 
-## 🚀 快速开始
-
+## 🚀 快速开�?
 ```bash
 git clone https://github.com/fangtaocai041/culter-agent.git
 cd culter-agent
@@ -67,36 +62,31 @@ python scripts/growth_analysis.py --species "Culter alburnus"
 
 ---
 
-## 🔗 生态体系
-
+## 🔗 生态体�?
 ```
 三角核心 (sealed 3):
-  📦 fish-ecology-assistant    → 知识供给 (V0)
-  🔍 cognitive-search-engine   → 搜索验证 (V1)
-  ⚙️ eon-core                  → 协调内核 (Coord)
+  📦 fish-ecology-assistant    �?知识供给 (V0)
+  🔍 cognitive-search-engine   �?搜索验证 (V1)
+  ⚙️ eon-core                  �?协调内核 (Coord)
 
 万物衍生 (open N):
-  🐬 porpoise-agent    → P₁ 江豚专研
-  🐟 coilia-agent      → P₂ 刀鲚专研
-  🐟 culter-agent      → P₃ 鲌类专研 ← 本项目
-  🔥 conflict-arbiter  → C  冲突仲裁
+  🐬 porpoise-agent    �?P�?江豚专研
+  🐟 coilia-agent      �?P�?刀鲚专�?  🐟 culter-agent      �?P�?鲌类专研 �?本项�?  🔥 conflict-arbiter  �?C  冲突仲裁
 ```
 
-> 🔥 和则无穷力量，分则顶尖专家引擎。
-
+> 🔥 和则无穷力量，分则顶尖专家引擎�?
 ---
 
-## ✨ 功能特性
-
-| 功能 | 状态 | 说明 |
+## �?功能特�?
+| 功能 | 状�?| 说明 |
 |------|:--:|------|
-| 🔬 领域分析 | ✅ | 鲌属专属研究管线 |
-| 📡 三角赋能 | ✅ | V0知识 + V1搜索 + Coord编排 |
-| 🧠 认知循环 | ✅ | ReAct 模式迭代分析 |
-| 📈 生长分析 | ✅ | von Bertalanffy 生长参数 + 体重-体长关系 |
-| 🍽️ 营养分析 | ✅ | 稳定同位素 (δ¹³C, δ¹⁵N) + 胃含物分析 |
-| 🎛️ 编排器 v2.10 | ✅ | CulterOrchestrator 调用真实 Python 脚本 |
-| ⚙️ 9 阶段管线 | ✅ | agent.yaml v2.1.0 + 6 种目标物种 |
+| 🔬 领域分析 | �?| 鲌属专属研究管线 |
+| 📡 三角赋能 | �?| V0知识 + V1搜索 + Coord编排 |
+| 🧠 认知循环 | �?| ReAct 模式迭代分析 |
+| 📈 生长分析 | �?| von Bertalanffy 生长参数 + 体重-体长关系 |
+| 🍽�?营养分析 | �?| 稳定同位�?(δ¹³C, δ¹⁵N) + 胃含物分�?|
+| 🎛�?编排�?v2.10 | �?| CulterOrchestrator 调用真实 Python 脚本 |
+| ⚙️ 9 阶段管线 | �?| agent.yaml v2.1.0 + 6 种目标物�?|
 
 ---
 
@@ -104,13 +94,12 @@ python scripts/growth_analysis.py --species "Culter alburnus"
 
 | 版本 | 日期 | 主题 | 变更内容 |
 |:------|:-----|:------|:-------------|
-| **v8.0** | 2026-06-20 | README 复原 | 从 stub 扩展: 完整哲学、架构、功能表、分析脚本、自我评价、变更记录、DeepWiki 徽标 |
-| **v1.0.0** | 2026-06-17 | 初始 | Stub README — 基本项目描述 |
+| **v8.0** | 2026-06-20 | README 复原 | �?stub 扩展: 完整哲学、架构、功能表、分析脚本、自我评价、变更记录、DeepWiki 徽标 |
+| **v1.0.0** | 2026-06-17 | 初始 | Stub README �?基本项目描述 |
 
 ---
 
-## 📜 许可证
-
+## 📜 许可�?
 MIT © 2026 fangtaocai041
 
 ---
