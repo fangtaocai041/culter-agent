@@ -1,4 +1,4 @@
-﻿"""Tests for culter-agent — Culter Domain Expert Engine (P3)."""
+"""Tests for culter-agent — Culter Domain Expert Engine (P3)."""
 import pytest
 import sys
 from pathlib import Path

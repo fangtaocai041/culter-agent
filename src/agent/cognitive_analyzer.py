@@ -1,4 +1,4 @@
-﻿"""CognitiveAnalyzer — BDI-inspired domain analysis engine for culter-agent.
+"""CognitiveAnalyzer — BDI-inspired domain analysis engine for culter-agent.
 
 Cross-pollination from porpoise-agent's cognitive architecture:
   - BDI state machine (Belief → Desire → Intention)

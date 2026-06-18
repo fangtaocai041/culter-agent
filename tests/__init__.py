@@ -1,1 +1,1 @@
-﻿# Culter Agent tests
+# Culter Agent tests
