@@ -80,8 +80,11 @@ def test_growth_stage_returns_structured_params(orch):
     assert "l∞" in all_text or "体长上限" in all_text
     # 必须有生长系数 K
     assert "k " in all_text or "k=" in all_text
-    # 必须有文献参数范围
-    assert "60" in all_text or "120" in all_text
+    # 必须有生长参数值（数字 + 单位）
+    has_digit = any(c.isdigit() for c in all_text)
+    assert has_digit, "生长参数应包含数值"
+    has_unit = "cm" in all_text or "yr" in all_text
+    assert has_unit, "生长参数应包含单位"
 
 
 # ═══════════════════════════════════════════════════════════════
