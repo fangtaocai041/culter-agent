@@ -25,23 +25,13 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-
-class CognitiveState(str, Enum):
-    IDLE = "idle"
-    PERCEIVING = "perceiving"
-    DELIBERATING = "deliberating"
-    EXECUTING = "executing"
-    REFLECTING = "reflecting"
-    DONE = "done"
-
-
-@dataclass
-class Belief:
-    species_data: Dict[str, Any] = field(default_factory=dict)
-    prior_knowledge: List[str] = field(default_factory=list)
-    search_results: Dict[str, Any] = field(default_factory=dict)
-    constraints: List[str] = field(default_factory=list)
-    confidence: float = 0.0
+# Ensure eon-core/src/shared is reachable for shared BDI types
+import sys as _sys
+from pathlib import Path as _Path
+_SHARED = str(_Path(__file__).resolve().parent.parent.parent.parent / "eon-core" / "src" / "shared")
+if _SHARED not in _sys.path:
+    _sys.path.insert(0, _SHARED)
+from cognitive_base import CognitiveState, Belief  # noqa: E402
 
 
 @dataclass
