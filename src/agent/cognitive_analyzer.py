@@ -4,7 +4,10 @@
 this module. Core BDI framework (CognitiveState/Belief/Desire/Intention/Reflection)
 is identical; species-specific methods differ. culter version lacks
 _extract_prior_knowledge() present in coilia version.
-TODO (Phase 3): extract BaseCognitiveAnalyzer into eon-core/src/shared/.
+
+✨ v8.0: Full shared cognitive engine available at eon-core/src/shared/cognitive/
+   (BDI + ReAct + Reflexion + Decomposer + ThoughtSearch).
+   To upgrade: from cognitive import BDICoordinator, ReActLoop, TaskDecomposer
 
 Cross-pollination from porpoise-agent's cognitive architecture:
   - BDI state machine (Belief → Desire → Intention)
