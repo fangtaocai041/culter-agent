@@ -191,9 +191,13 @@ class KnowledgeBase:
             return (key, int(rest))
         except ValueError:
             pass
-        # 浮点数
+        # 浮点数 (排除 inf/nan 避免下游崩溃)
         try:
-            return (key, float(rest))
+            val = float(rest)
+            import math
+            if not math.isfinite(val):
+                return (key, rest)  # treat as string
+            return (key, val)
         except ValueError:
             pass
         # 字符串 — 去外层引号
