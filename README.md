@@ -194,6 +194,7 @@ culter-agent/
 | 🎛️ Orchestrator v2.10 | ✅ | CulterOrchestrator calling real Python scripts (not stubs) |
 | ⚙ 9-Phase Pipeline | ✅ | agent.yaml v2.1.0 with 6 target *Culter* species |
 | 🔄 Cross-Project | ✅ | Triangle bridge for fish-ecology KB access |
+| 🌊 Emergence Sensing | ✅ | CulterOrchestrator embedded EmergenceMonitor (D₁/D₂ tracking) |
 | 🗂️ 6 Species | ✅ | *C. alburnus, C. mongolicus, C. oxycephalus, C. dabryi, C. oxycephaloides, C. recurviceps* |
 
 </details>
