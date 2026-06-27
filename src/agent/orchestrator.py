@@ -25,7 +25,23 @@ import subprocess
 import sys
 from dataclasses import dataclass, field
 from enum import Enum
+from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
+
+# ── Emergence Engine Integration ──
+_EMERGENCE_AVAILABLE = False
+_EmergenceMonitor = None
+_DimensionalLevel = None
+try:
+    _infra = str(Path(__file__).resolve().parent.parent.parent.parent / "infrastructure")
+    if _infra not in sys.path:
+        sys.path.insert(0, _infra)
+    from unified_emergence import EmergenceMonitor, DimensionalLevel
+    _EMERGENCE_AVAILABLE = True
+    _EmergenceMonitor = EmergenceMonitor
+    _DimensionalLevel = DimensionalLevel
+except ImportError:
+    pass
 
 logger = logging.getLogger(__name__)
 
@@ -217,6 +233,17 @@ class CulterOrchestrator:
                 self._kb = get_knowledge_base()
             except Exception:
                 pass
+
+        # ── Emergence Monitor ──
+        self._emergence_monitor: Optional[Any] = None
+        if _EMERGENCE_AVAILABLE:
+            self._emergence_monitor = _EmergenceMonitor(
+                emergence_threshold_sigma=3.0,
+                min_sources=3,
+            )
+            logger.info("CulterOrchestrator emergence monitor enabled")
+        else:
+            logger.info("CulterOrchestrator emergence monitor unavailable")
 
     def _get_species_profile(self) -> Dict[str, Any]:
         """从知识库动态构建物种档案，不可用时回退到 _DEFAULT_PROFILE。"""
@@ -440,6 +467,10 @@ class CulterOrchestrator:
             result.total_tokens += pr.tokens_used
 
         result.synthesis = self._synthesize(result)
+
+        # ── Emergence Recording ──
+        self._record_emergence_culter(question, result)
+
         return {
             "agent": "Culter Agent (P₃)",
             "species": self._get_species_profile()["primary_species"],
@@ -450,6 +481,57 @@ class CulterOrchestrator:
             "delegate_message": result.synthesis,
             **result.__dict__,
         }
+
+    # ── Emergence Integration ──
+
+    def _record_emergence_culter(self, question: str, result: PipelineResult) -> None:
+        """记录管道执行指标到涌现引擎。"""
+        if not self._emergence_monitor or not _EMERGENCE_AVAILABLE:
+            return
+        try:
+            self._emergence_monitor.record(
+                "c3_pipeline_phases", float(len(result.phases_executed)),
+                _DimensionalLevel.D1,
+            )
+            self._emergence_monitor.record(
+                "c3_pipeline_papers", float(result.total_papers),
+                _DimensionalLevel.D1,
+            )
+            self._emergence_monitor.record(
+                "c3_pipeline_tokens", float(result.total_tokens),
+                _DimensionalLevel.D1,
+            )
+            has_errors = 1.0 if result.errors else 0.0
+            self._emergence_monitor.record(
+                "c3_pipeline_errors", has_errors,
+                _DimensionalLevel.D2,
+            )
+            if len(result.phases_executed) >= 3:
+                signals = self._emergence_monitor.check_emergence()
+                if signals:
+                    logger.warning(
+                        "Emergence in pipeline: %d signal(s), %d phases",
+                        len(signals), len(result.phases_executed),
+                    )
+        except Exception:
+            pass
+
+    def get_emergence_health(self) -> dict:
+        if not self._emergence_monitor:
+            return {"status": "unavailable"}
+        try:
+            return self._emergence_monitor.health_report()
+        except Exception:
+            return {"status": "error"}
+
+    @property
+    def has_emergence(self) -> bool:
+        if not self._emergence_monitor:
+            return False
+        try:
+            return len(self._emergence_monitor.pending_signals) > 0
+        except Exception:
+            return False
 
     # ── Phase: Literature ──
 

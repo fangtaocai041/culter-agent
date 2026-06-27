@@ -129,6 +129,7 @@ pip install -e .
 | 📏 年龄生长 | ✅ | von Bertalanffy 参数最大似然估计 |
 | 🌊 同域共存 | ✅ | 生态位重叠与分化定量分析 |
 | 📊 资源评估 | ✅ | 基于长度的资源评估模型 |
+| 🌊 涌现代入 | ✅ | CulterOrchestrator 管道内嵌 EmergenceMonitor (D₁/D₂ 维度追踪) |
 
 </details>
 
