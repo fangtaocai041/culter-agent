@@ -1,116 +1,102 @@
-# fangtao_fishlab — 淡水鱼类生态智能体主系统
-
-[![Version](https://img.shields.io/badge/version-v8.0.0-blue)](./__init__.py)
-
-## 概述
-
-fangtao_fishlab 是一个**多 Agent 协作的知识工程平台**，为淡水鱼类生态学研究提供：
-- 🔍 多源文献搜索与验证
-- 📚 物种知识库查询
-- ⚖️ 多源冲突仲裁
-- 📈 涌现行为检测
-- 🐟 领域专研分析（江豚/刀鲚/鲌类）
-- 🧠 贝叶斯工程化信念更新
-- 🔗 声明式管线调度
-
-## 快速开始
-
-```python
-from fangtao_fishlab import (
-    BetaBelief,          # 🧠 贝叶斯信念引擎
-    health_check_all,    # 🩺 一键健康检查（含耗时量化）
-    get_adapter,         # 🔌 获取任意项目适配器
-    query_library,       # 📚 搜索方陶文库
-)
-
-# 贝叶斯更新
-b = BetaBelief(alpha=2, beta=2)
-b.update(successes=8, trials=10)
-print(b.mean())  # 0.714
-
-# 全系统健康检查 + 耗时量化
-report = health_check_all()
-
-# 获取特定项目的适配器
-cse = get_adapter("cognitive-search-engine")
-result = cse.search("鳤")
-
-# 搜索方陶文库
-docs = query_library("coilia")
-```
-
-## 项目结构
+<div align="center">
 
 ```
-fangtao_fishlab/
-├── __init__.py                # 统一入口
-├── _bayesian/                 # 🧠 独立贝叶斯核心
-├── _shared/                   # 共享基础设施
-│   ├── adapter_protocol.py    # IProjectAdapter + BayesianAdapterMixin
-│   ├── types.py               # Pydantic 模型（CheckReport/AdapterState）
-│   ├── config_loader.py       # YAML 配置加载
-│   ├── pipeline.py            # 管线调度（STANDARD/FAST/DOMAIN）
-│   ├── auditor.py             # 结构化步日志（AuditTrail）
-│   ├── errors.py              # 5级错误策略（safe_call）
-│   └── path_init.py           # ensure_paths() 路径初始化
-├── config/                    # YAML 配置文件
-│   ├── agents.yaml            # 9个项目角色定义
-│   └── bayesian_priors.yaml   # 贝叶斯先验参数
-├── scripts/                   # 工具脚本
-│   ├── scaffold.py            # 🏗️ 新建 adapter 脚手架
-│   ├── health_check_all.py    # 🩺 统一健康检查（含耗时量化）
-│   ├── test_pipeline.py       # 管线端到端测试
-│   └── benchmark_comparison.py # 新旧对比基准
-├── cognitive-search-engine/   # 🔍 V1 搜索验证
-├── fish-ecology-assistant/    # 📚 S0 知识供给
-├── eon-core/                  # 🔗 协调中枢
-├── conflict-arbiter/          # ⚖️ 冲突仲裁
-├── infrastructure/            # 📈 涌现检测
-├── porpoise-agent/            # 🐬 P1 江豚
-├── coilia-agent/              # 🐟 P2 刀鲚
-├── culter-agent/              # 🐟 P3 鲌类
-└── san-sheng-wanwu-core/      # 🧘 元框架
+╔══════════════════════════════════════════════════════════════╗
+║   🐟  CULTER AGENT · P₃ 鲌类专研  vv1.4.0                ║
+║  ─────────────────────────────────────────────────────────  ║
+║    鲌类生长 · 营养生态 · 栖息地 · 基因组学                                           ║
+║        6 种鲌属 · 长江流域                                           ║
+╚══════════════════════════════════════════════════════════════╝
 ```
 
-## 共享模块
+<p align="center">
+  🇬🇧 <a href="README.md">English</a>
+</p>
 
-| 模块 | 功能 | 被使用 |
-|:----|:-----|:------|
-| `adapter_protocol.py` | IProjectAdapter + BayesianAdapterMixin | 所有 7 个 adapter |
-| `types.py` | CheckReport/AdapterState/SearchResult | FEA, 全局导出 |
-| `config_loader.py` | YAML 配置加载 | from_config() |
-| `pipeline.py` | STANDARD/FAST/DOMAIN 三条管线 | test_pipeline.py |
-| `auditor.py` | AuditTrail 结构化步日志 | CSE health() |
-| `errors.py` | 5级错误策略 safe_call() | CSE search() |
-| `path_init.py` | ensure_paths() 统一路径 | coilia/porpoise adapter |
+![Python 3.10+](https://img.shields.io/badge/Python 3.10+-3776AB?style=flat-square)
+![v1.4.0](https://img.shields.io/badge/v1.4.0-8A4FCE?style=flat-square)
+![6 species](https://img.shields.io/badge/6 species-007EC6?style=flat-square)
+![Growth Model](https://img.shields.io/badge/Growth Model-0EA5E9?style=flat-square)
 
-## 新建项目
+<p align="center">
+  <a href="https://github.com/fangtaocai041/culter-agent/stargazers"><img src="https://img.shields.io/github/stars/fangtaocai041/culter-agent?style=social" alt="Stars"></a>
+  <a href="https://github.com/fangtaocai041/culter-agent/network/members"><img src="https://img.shields.io/github/forks/fangtaocai041/culter-agent?style=social" alt="Forks"></a>
+</p>
+
+<div align="center"><h3>🌊 万物皆流 · Panta Rhei</h3></div>
+
+</div>
+
+---
+
+## 📑 目录
+
+- [🧬 这是什么](#-这是什么)
+- [🚀 快速开始](#-快速开始)
+- [📡 API](#-api)
+- [✅ 验证](#-验证)
+
+---
+
+## 🧬 这是什么
+
+**Culter Agent** 是长江鲌类（Culter spp.）专研智能体，提供以下能力：
+
+| 能力 | 说明 |
+|:-----|:------|
+| 🐟 生长模型 | von Bertalanffy 生长方程 · 年龄鉴定 |
+| 🌿 营养生态 | 稳定同位素 · 食性分析 |
+| 🏞️ 栖息地 | 栖息地适宜性建模 · 空间分布 |
+| 🧬 基因组学 | 群体遗传学 · 系统发育 |
+
+---
+
+## 🚀 快速开始
 
 ```bash
-# 🏗️ 一键生成 adapter 模板
-python scripts/scaffold.py new-agent <name>
-
-# 📋 列出已有项目
-python scripts/scaffold.py list
+pip install -e .
 ```
 
-## 双轨制
-
-| 系统 | 用途 | 特点 |
-|:----|:-----|:------|
-| 🏠 **fangtao_fishlab** | 🖥️ 日常主系统 | 全功能、独立运行、贝叶斯内置 |
-| 🌐 **fish_ecology** | 📦 GitHub 简本 | 轻量、一键 pip install |
-
-## 健康检查示例输出
-
-```
-[PASS] cognitive-search-engine   t=547.9ms | health=HEALTHY | score=100.0
-[PASS] conflict-arbiter          t=0.2ms   | health=HEALTHY | score=100.0
-[PASS] porpoise-agent            t=0.3ms   | health=HEALTHY | score=100.0
-[PASS] coilia-agent              t=0.3ms   | health=HEALTHY | score=100.0
-[PASS] culter-agent              t=0.4ms   | health=HEALTHY | score=100.0
-[DEGR] fish-ecology-assistant    t=6.1ms   | health=DEGRADED
-[DEGR] eon-core                  t=0.4ms   | health=STANDBY
+```python
+from culter_agent import CulterAgent
+agent = CulterAgent()
+result = agent.search("翘嘴鲌")
 ```
 
-每步附带耗时 t=xxx ms，执行链路可追踪。
+---
+
+## 📡 API
+
+| 方法 | 说明 |
+|:-----|:------|
+| `search(query)` | 物种文献搜索 |
+| `health()` | 系统健康检查 |
+
+---
+
+## ✅ 验证
+
+```bash
+python -m pytest tests/ -v
+```
+
+---
+
+## 📜 版本历史
+
+| v1.4.0 | 2026-07 | 鲌类专研智能体 |
+
+---
+
+## 📄 许可证
+
+MIT (c) 2026 fangtaocai041
+
+---
+
+<div align="center">
+<p><em>「道生一，一生二，二生三，三生万物。」</em><br>
+<em>——《道德经》第四十二章</em></p>
+<br>
+<p><strong>🌊 万物皆流 · Panta Rhei</strong></p>
+</div>
